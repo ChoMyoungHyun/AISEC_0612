@@ -20,4 +20,4 @@ tensorflow - deep learning lib
 sklearn - preprocessing lib   
 pandas - data analize and control lib   
   
-▩▩▩ 포트폴리오 since 2025-08-18 
+▩▩▩ 포트폴리오 since 2025-08-18 ▩▩▩   
