@@ -10,14 +10,14 @@ jupyter_ai : 인공지능 모델 학습을 위한 전처리 및 모델 구축과
   
 lotto_AI : 학습된 모델의 사용자 서비스 구현을 위한 백앤드 미들웨어 서버 및 UI 와 모델의 연동 
 
-◎ 개발툴 
-pycharm - flask middle server launch and user UI integrate  
-jupyter - local remote share learning  
-colab - development tools for working with graphics processing 
+◎ 개발툴   
+pycharm - flask middle server launch and user UI integrate    
+jupyter - local remote share learning    
+colab - development tools for working with graphics processing   
 
-◎ 주요 라이브러리 
-tensorflow - deep learning lib 
-sklearn - preprocessing lib 
-pandas - data analize and control lib 
+◎ 주요 라이브러리   
+tensorflow - deep learning lib   
+sklearn - preprocessing lib   
+pandas - data analize and control lib   
   
 ▩▩▩ 포트폴리오 since 2025-08-18 
