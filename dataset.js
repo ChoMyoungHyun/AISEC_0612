@@ -100,11 +100,11 @@ d3.set_img(1, { imgtitle: "11. 밀집 수로 변경", imgurl: "https://drive.goo
 d3.set_img(1, { imgtitle: "12. 모델 구성", imgurl: "https://drive.google.com/file/d/11tLGZBW8CU6svC5c0lEU8JtAfG2Au4ez/view?usp=drive_link", imglog: "Embedding layer와 Conv1DLSTM layer를 활용한 모델 구성", sourceurl: ""})
 d3.set_img(1, { imgtitle: "13. 모델 훈련", imgurl: "https://drive.google.com/file/d/1vUtnGgYrtB4xiw3Ha7XUKvqMu5HdWijZ/view?usp=drive_link", imglog: "조기 종료 콜백 함수를 탑재한 후 모델 훈련", sourceurl: ""})
 d3.set_img(1, { imgtitle: "14. 훈련 결과 시각화", imgurl: "https://drive.google.com/file/d/1V3S2G0SoTg-vgtsED_WOZcT4dGDuE0z7/view?usp=drive_link", imglog: "분류 모델의 손실률 및 정확률 훈련 결과 그래프 시각화", sourceurl: ""})
-d3.set_content("3.3  모델 훈련 평가")//서브 타이틀
+d3.set_content("3.3 모델 훈련 평가")//서브 타이틀
 d3.set_img(2, { imgtitle: "15. 모델 평가", imgurl: "https://drive.google.com/file/d/1O5RGq0ZslGFNB2x5Uki-DtiM27nfsT4J/view?usp=drive_link", imglog: "테스트 데이터와 evaluate 메소드를 이용한 훈련된 모델의 최종 평가", sourceurl: ""})
 d3.set_img(2, { imgtitle: "16. 혼동 행렬", imgurl: "https://drive.google.com/file/d/10Pm30ZhsGN0-NMXfRlYXRU9XzxOOExO5/view?usp=drive_link", imglog: "분류 모델 평가를 위한 혼동 행렬 그래프 출력", sourceurl: ""})
 d3.set_img(2, { imgtitle: "17. F1 스코어", imgurl: "https://drive.google.com/file/d/1WLneEOKNONywEmvFReOen3KOROzgT5Bh/view?usp=drive_link", imglog: "최종 F1 스코어로 정밀도, 재현율, F1-score 모델 성능 판별", sourceurl: ""})
-d3.set_content("3.4  서비스 구현")//서브 타이틀
+d3.set_content("3.4 서비스 구현")//서브 타이틀
 d3.set_img(3, { imgtitle: "18. 모델의 저장 및 확인", imgurl: "https://drive.google.com/file/d/1BxqwbeGphAjVUnWVxB6oe9VZ9DZjpHjj/view?usp=drive_link", imglog: "모델 저장 후 저장된 모델 불러오기", sourceurl: ""})
 d3.set_img(3, { imgtitle: "19. 실제 데이터 입력 및 처리 구현", imgurl: "https://drive.google.com/file/d/1OCPqlzgD5PZDk8QZCyr--RpSqxrxFi7D/view?usp=drive_link", imglog: "가상의 실제 데이터를 입력하여 최종 결과물 처리 구현", sourceurl: ""})
 d3.set_img(3, { imgtitle: "20. 서비스를 위한 리팩토링", imgurl: "https://drive.google.com/file/d/1mCPHFFGOOyo9artCe6B7pb-65y4DTmoT/view?usp=drive_link", imglog: "최종 서비스를 위한 모델 함수 리팩토링", sourceurl: ""})
