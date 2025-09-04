@@ -58,13 +58,57 @@ d1.set_fill("로또 추첨일 날짜로 당첨 번호를 스케일링 한 후 �
 data_sets.push(d1)
 
 // menu2 =============================================================
-let d2 = new DataSet("공통모듈구현")//메인타이틀
-
+let d2 = new DataSet("네이버 영화 감성 리뷰 이진분류 예측")//메인타이틀
+d2.set_content("2.1 데이터 수집 및 전처리")//서브 타이틀
+d2.set_img(0, { imgtitle: "1. 한글 형태소 분류등 필요 라이브러리", imgurl: "https://drive.google.com/file/d/1BoxFRj0XV34hT--GEc9AOeZ-e102g8Nv/view?usp=drive_link", imglog: "Konlp및 필요 라이브러리 설치 및 import", sourceurl: ""})
+d2.set_img(0, { imgtitle: "2. 데이터 수집 및 읽어오기", imgurl: "https://drive.google.com/file/d/15eDRcLdwMqwJ3Dg71I6rrkigSpIDIVP7/view?usp=drive_link", imglog: "네이버 영화 감상평 리뷰 수집 및 판다스로 읽어오기", sourceurl: ""})
+d2.set_img(0, { imgtitle: "3. 데이터 수량 및 정보 확인", imgurl: "https://drive.google.com/file/d/1vwrTXdpQs18mny6PBAFLXD66cHmUANwI/view?usp=drive_link", imglog: "판다스로 데이터 수량 파악과 데이터의 타입등을 확인", sourceurl: ""})
+d2.set_img(0, { imgtitle: "4. 결측 데이터 보정", imgurl: "https://drive.google.com/file/d/1ETdL7DnSDzC_me26hqboshaqqwIn0F-9/view?usp=drive_link", imglog: "결측 데이터 수량 확인 및 제거 후 수량 확인", sourceurl: ""})
+d2.set_img(0, { imgtitle: "5. 중복 데이터 처리", imgurl: "https://drive.google.com/file/d/1xe1ncmsAA8DudhvllcgKe0YZDnIbjfpL/view?usp=drive_link", imglog: "중복 된 데이터 확인과 제거", sourceurl: ""})
+d2.set_img(0, { imgtitle: "6. 한글 데이터 처리", imgurl: "https://drive.google.com/file/d/17Bjwu_JKrp2bG-zRxf27DeoJ2vEQcFau/view?usp=drive_link", imglog: "한글과 공백을 제외한 모든 문자 제거", sourceurl: ""})
+d2.set_img(0, { imgtitle: "7. 한글 형태소 분리", imgurl: "https://drive.google.com/file/d/1P5bm1tY_0MAdizRnkUU3GtPNmUq3eQP0/view?usp=drive_link", imglog: "사용하지 않는 불용어 처리와 Konlp를 활용한 형태소 분리", sourceurl: ""})
+d2.set_img(0, { imgtitle: "8. 단어 사이즈 분석", imgurl: "https://drive.google.com/file/d/1Ms6tP2hQsyUPuN39RsKcm3C25asFv9_U/view?usp=drive_link", imglog: "단어의 출현 빈도에 따른 단어 사전 사이즈 분석 및 결정", sourceurl: ""})
+d2.set_img(0, { imgtitle: "9. 문장의 길이 분석", imgurl: "https://drive.google.com/file/d/1V-jZE9U9h60fCaqB2hWhLJy0h0Scl7To/view?usp=drive_link", imglog: "Histogram에 의한 문장의 길이 분석 후 적절한 최대 문장 길이 선정", sourceurl: ""})
+d2.set_img(0, { imgtitle: "10. 단어 사전 생성", imgurl: "https://drive.google.com/file/d/1blwaU9RA4STXvJVO-DCc120fyYhxjLwI/view?usp=drive_link", imglog: "단어 사이즈와 문장 사이즈를 설정하여 TextVectorize layer를 활용한 단어 사전 생성", sourceurl: ""})
+d2.set_img(0, { imgtitle: "11. 환경 저장", imgurl: "https://drive.google.com/file/d/1N1EHkK_gQyXphLmmt_p31L6GD_ClhiPq/view?usp=drive_link", imglog: "단어 사이즈, 문장 길이, 단어 사전을 환경 설정 파일로 저장", sourceurl: ""})
+d2.set_content("2.2 LSTM 모델 구성 및 훈련")//서브 타이틀
+d2.set_img(1, { imgtitle: "12. 희소텐서 및 임베딩", imgurl: "https://drive.google.com/file/d/16k7aw3LQ2jR-rRDenlTl_9nUJ3LMFaBn/view?usp=drive_link", imglog: "TextVectorize를 활용한 단어 정수 변환과 Embedding layer를 활용한 밀집텐서(부동소수점) 변환 테스트", sourceurl: ""})
+d2.set_img(1, { imgtitle: "13. 모델 구성", imgurl: "https://drive.google.com/file/d/1Y3o1uKubEK2OFOqW8QFd9wqrl6xju-JM/view?usp=drive_link", imglog: "Embedding layer 및 LSTM layer를 주축으로 이진분류 모델 구성 및 컴파일", sourceurl: ""})
+d2.set_img(1, { imgtitle: "14. 모델 훈련", imgurl: "https://drive.google.com/file/d/1qvyKRDsOxPmsQLFVWidikMUWuuFauDYo/view?usp=drive_link", imglog: "조기 종료 콜백 함수를 탑재한 모델을 훈련", sourceurl: ""})
+d2.set_content("2.3 모델 훈련 평가")//서브 타이틀
+d2.set_img(2, { imgtitle: "15. 훈련 결과 그래프", imgurl: "https://drive.google.com/file/d/1mCELi5i3fkQzkSe3nb4RTGI3c1fbuPBN/view?usp=drive_link", imglog: "훈련 데이터와 검증 데이터의 손실률, 정확률 시각화 판단", sourceurl: ""})
+d2.set_img(2, { imgtitle: "16. 서비스를 위한 리팩토링", imgurl: "https://drive.google.com/file/d/1MbkpwxKneGDfMiwBqGf4UQgeOL9c6oqO/view?usp=drive_link", imglog: "모델 서비스를 위한 코드 리팩토링", sourceurl: ""})
+d2.set_content("2.4 서비스 페이지 네이버 쇼핑 리뷰 탑재")//서브 타이틀
+//d2.set_img(0, { imgtitle: "", imgurl: "", imglog: "", sourceurl: ""})
 data_sets.push(d2)
 
 // menu3 =============================================================
-let d3 = new DataSet("서버프로그램구현")//메인타이틀
-
+let d3 = new DataSet("네이버 쇼핑 상품 감성 리뷰 이진분류 예측")//메인타이틀
+d3.set_content("3.1 상품 리뷰 데이터 수집 및 전처리")//서브 타이틀
+d3.set_img(0, { imgtitle: "1. 데이터 수집하기", imgurl: "https://drive.google.com/file/d/17AwGrK0rqUmfvZafKfjQTzMx5BkS_WyG/view?usp=drive_link", imglog: "네이버 쇼핑 상품 리뷰 수집 및 pandas data 변환", sourceurl: ""})
+d3.set_img(0, { imgtitle: "2. 정답 데이터 범위 수정", imgurl: "https://drive.google.com/file/d/194zrexKBvyCHs7kA2CK-ZZLlrv6xTRgY/view?usp=drive_link", imglog: "이진 분류를 위한 별점의 수량에 따른 긍정과 부정 분류", sourceurl: ""})
+d3.set_img(0, { imgtitle: "3. 결측치 및 중복 제거", imgurl: "https://drive.google.com/file/d/1FtYZrQsYeDPaOqhk4qY6ilHNHRkGjEkU/view?usp=drive_link", imglog: "결측 데이터 및 중복 데이터 확인과 제거", sourceurl: ""})
+d3.set_img(0, { imgtitle: "4. 데이터 분할", imgurl: "https://drive.google.com/file/d/1AHS0DIz1PY2-YSW1-sM55MQ7k2wcPe1j/view?usp=drive_link", imglog: "훈련 데이터, 검증 데이터, 테스트 데이터 분할", sourceurl: ""})
+d3.set_img(0, { imgtitle: "5. 한글 영문 공백 외 제거", imgurl: "https://drive.google.com/file/d/171fZuvRJrrETIvw5v0H1jNJq77IbzwEn/view?usp=drive_link", imglog: "Normalization을 이용한 한글 및 영문, 공백을 제외한 모든 문자 제거", sourceurl: ""})
+d3.set_img(0, { imgtitle: "6. 불용어 처리 및 형태소 분리", imgurl: "https://drive.google.com/file/d/13G6mTxZ9U9G0CcJZOjsNwP-D1oXCPlq-/view?usp=drive_link", imglog: "불용어 처리와 Konlp를 이용한 한글 형태소를 분리", sourceurl: ""})
+d3.set_img(0, { imgtitle: "7. 단어 사이즈 결정", imgurl: "https://drive.google.com/file/d/1_8kZOY7vvoHZadct-xLG1dlVfrrSQGGk/view?usp=drive_link", imglog: "단어의 출현 빈도를 계산한 사전 사이즈 결정", sourceurl: ""})
+d3.set_img(0, { imgtitle: "8. 문장 사이즈 결정", imgurl: "https://drive.google.com/file/d/1rYKIIo_7r9Ncr0KtUHFgBhwRK1a8XsnJ/view?usp=drive_link", imglog: "문장 길이별 Histogram Analyze으로 최대 문장의 길이 결정", sourceurl: ""})
+d3.set_img(0, { imgtitle: "9. 문장 정확성 확인과 정수 변경", imgurl: "https://drive.google.com/file/d/1PltuShW9Zl9ozVuXMdWPdgPR1tLnlWQx/view?usp=drive_link", imglog: "TextVectorize를 이용한 문장의 정수 변경 및 zero 패딩 수행", sourceurl: ""})
+d3.set_img(0, { imgtitle: "10. 변경 데이터 확인", imgurl: "https://drive.google.com/file/d/1mlAWt0csaAGsCl7vj7ob5ODyJcxKzl6z/view?usp=drive_link", imglog: "정수로 변경 된 데이터와 zero 패딩 된 데이터 확인", sourceurl: ""})
+d3.set_content("3.2 Conv1DLSTM 모델 구성 및 훈련")//서브 타이틀
+d3.set_img(1, { imgtitle: "11. 밀집 수로 변경", imgurl: "https://drive.google.com/file/d/10LEuHFZUl9rs-xgUgCu0e3j5qemo_Dhi/view?usp=drive_link", imglog: "정수로 변경된 데이터를 Embedding layer를 이용한 밀집 값으로 변경 여부 확인", sourceurl: ""})
+d3.set_img(1, { imgtitle: "12. 모델 구성", imgurl: "https://drive.google.com/file/d/11tLGZBW8CU6svC5c0lEU8JtAfG2Au4ez/view?usp=drive_link", imglog: "Embedding layer와 Conv1DLSTM layer를 활용한 모델 구성", sourceurl: ""})
+d3.set_img(1, { imgtitle: "13. 모델 훈련", imgurl: "https://drive.google.com/file/d/1vUtnGgYrtB4xiw3Ha7XUKvqMu5HdWijZ/view?usp=drive_link", imglog: "조기 종료 콜백 함수를 탑재한 후 모델 훈련", sourceurl: ""})
+d3.set_img(1, { imgtitle: "14. 훈련 결과 시각화", imgurl: "https://drive.google.com/file/d/1V3S2G0SoTg-vgtsED_WOZcT4dGDuE0z7/view?usp=drive_link", imglog: "분류 모델의 손실률 및 정확률 훈련 결과 그래프 시각화", sourceurl: ""})
+d3.set_content("3.3  모델 훈련 평가")//서브 타이틀
+d3.set_img(2, { imgtitle: "15. 모델 평가", imgurl: "https://drive.google.com/file/d/1O5RGq0ZslGFNB2x5Uki-DtiM27nfsT4J/view?usp=drive_link", imglog: "테스트 데이터와 evaluate 메소드를 이용한 훈련된 모델의 최종 평가", sourceurl: ""})
+d3.set_img(2, { imgtitle: "16. 혼동 행렬", imgurl: "https://drive.google.com/file/d/10Pm30ZhsGN0-NMXfRlYXRU9XzxOOExO5/view?usp=drive_link", imglog: "분류 모델 평가를 위한 혼동 행렬 그래프 출력", sourceurl: ""})
+d3.set_img(2, { imgtitle: "17. F1 스코어", imgurl: "https://drive.google.com/file/d/1WLneEOKNONywEmvFReOen3KOROzgT5Bh/view?usp=drive_link", imglog: "최종 F1 스코어로 정밀도, 재현율, F1-score 모델 성능 판별", sourceurl: ""})
+d3.set_content("3.4  서비스 구현")//서브 타이틀
+d3.set_img(3, { imgtitle: "18. 모델의 저장 및 확인", imgurl: "https://drive.google.com/file/d/1BxqwbeGphAjVUnWVxB6oe9VZ9DZjpHjj/view?usp=drive_link", imglog: "모델 저장 후 저장된 모델 불러오기", sourceurl: ""})
+d3.set_img(3, { imgtitle: "19. 실제 데이터 입력 및 처리 구현", imgurl: "https://drive.google.com/file/d/1OCPqlzgD5PZDk8QZCyr--RpSqxrxFi7D/view?usp=drive_link", imglog: "가상의 실제 데이터를 입력하여 최종 결과물 처리 구현", sourceurl: ""})
+d3.set_img(3, { imgtitle: "20. 서비스를 위한 리팩토링", imgurl: "https://drive.google.com/file/d/1mCPHFFGOOyo9artCe6B7pb-65y4DTmoT/view?usp=drive_link", imglog: "최종 서비스를 위한 모델 함수 리팩토링", sourceurl: ""})
+d3.set_img(3, { imgtitle: "21. 최종 서비스 페이지", imgurl: "https://drive.google.com/file/d/1IlRy70vH7QJz1fIOYhn2TBJ3QpS3t8z3/view?usp=drive_link", imglog: "최종 서비스 페이지 결과 화면", sourceurl: ""})
 data_sets.push(d3)
 
 // menu4 =============================================================
